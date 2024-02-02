@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import QApplication, QWidget, QLabel
 SCREEN_SIZE = [600, 450]
 
 
-class Example(QWidget):
+class Application(QWidget):
     def __init__(self):
         super().__init__()
         self.get_image(0.05)
@@ -46,6 +46,6 @@ class Example(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = Example()
+    ex = Application()
     ex.show()
     sys.exit(app.exec())
